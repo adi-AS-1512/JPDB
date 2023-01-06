@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'poppins',sans-serif;
+   box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container h1{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+.container h1::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 462px;
+    left: 190px;
+    background-color: #000922;
+    border-radius: 8px;
+}
+.container form{
+    position: relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: aliceblue;
+    margin-left: 180px;
+}
+
+.container form .form-control{
+    /* margin-top: 10px; */
+    width: 70%;
+    
+}
+
+.container form .form-group{
+ /* display: flex; */
+    align-items: center;
+    justify-content: space-between;  
+}
+.form-group label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-group input{
+    margin: 8px 0;
+    height: 42px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+}
+.form-group input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+#Save{
+    background-color: rgb(2, 39, 27);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    height: 30px;
+    width: 15%;
+}
+#Change{
+    background-color: rgb(2, 39, 27);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    height: 30px;
+    width: 15%;
+}
+#Reset{
+    background-color: rgb(2, 39, 27);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    height: 30px;
+    width: 15%;
+}
+.btn-field{
+    margin-left: 95px;
+}

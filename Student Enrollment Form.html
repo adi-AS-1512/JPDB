@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form || LogIn Form</title>
+    <link rel="stylesheet" href="SEF.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Student Enrollment Form || Login Form</h1><br>
+
+        <form id="stdId" method="post">
+
+            <div class="form-group">
+                <label for="stdId">Roll-No:</label><label id="stdIdMsg">
+                </label><br>
+                <input type="number" class="form-control" name="rollNo" id="stdRollNo" placeholder="Enter Roll No."
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="stdName">Full-Name:</label><br>
+                <input type="text" class="form-control" id="stdName" placeholder="Enter Name" name="stdName" required>
+            </div>
+            <div class="form-group">
+                <label for="stdClass">Class:</label><br>
+                <input type="text" class="form-control" id="stdClass" placeholder="Enter Class" name="stdClass"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="Dob">Birth-Date:</label><br>
+                <input type="date" class="form-control" id="dob" placeholder="Enter Birth Date" name="Dob" required>
+            </div>
+            <div class="form-group">
+                <label for="stdAdd">Address:</label><br>
+                <input type="text" class="form-control" id="Address" placeholder="Enter Student Address" name="stdAdd"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="erDate">Enrollment Date:</label><br>
+                <input type="date" class="form-control" id="ErDate" placeholder="Date of Enrollment" name="ErDate"
+                    required>
+            </div><br>
+                <button type="submit" id="Save"  onclick="saveData()">Save</button>
+                <button type="submit" id="Change" onclick="changeData()">Change</button>
+                <button type="submit" id="Reset" onclick="resetData()">Reset</button>
+            
+        </form>
+
+    </div>
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
